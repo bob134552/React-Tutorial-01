@@ -1,13 +1,13 @@
 import "./TabButton.css";
 
-export default function TabButton({children}) {
+export default function TabButton({children, onSelect}) {
     function clickHandler() {
-        console.log('Hello World!');
+        console.log('TABBUTTON COMPONENT EXECUTING');
     }
 
     return (
         <li>
-            <button onClick={clickHandler}>{children}</button>
+            <button onClick={onSelect}>{children}</button>
         </li>
     );
 };
